@@ -1,0 +1,78 @@
+#user{
+    padding: 50px 0 0;
+    .con{
+        display: flex;
+        justify-content: center;
+        .item-box{
+            width: 1000px;
+            .user-box{
+                display: flex;
+                align-items: center;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #eee;
+                .avatar{
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                    background-color: #ddd;
+                }
+                .user-detail{
+                    margin-left: 20px;
+                    .username{
+                        font-size: large;
+                        font-weight: 700;
+                    }            
+                 
+                }
+            }
+            .item{
+                padding: 20px;
+                display: block;
+                
+                margin-top:20px ;
+                text-decoration: none;
+                color: #333;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);  
+                .title{
+                    text-align: left;
+                    font-size: large;
+                    font-weight: 700;
+                    line-height: 1.5;
+                    font-family: -apple-system,SF UI Display,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+                    overflow: hidden;
+                    text-overflow:ellipsis;
+                    white-space: nowrap;
+                    word-break:break-all;
+                }
+                .description{
+                    padding-top: 8px;
+                    text-align: left;
+                    font-size: small;
+                    color: #999;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    overflow: hidden;
+                }
+                .time{
+                    color: #999;
+                    font-size: small;
+                    text-align: left;
+                    margin-top: 10px;
+                }
+            }
+            @media (max-width:1250px){
+                width: 800px;
+            }
+            @media (max-width:900px){
+                width: 650px;
+            }
+            @media (max-width:700px){
+                width: 450px;
+            }
+            @media (max-width:500px){
+                width: 100%;
+            }
+        }
+    }
+}

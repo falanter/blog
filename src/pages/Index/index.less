@@ -1,0 +1,98 @@
+// * {
+//     box-sizing: border-box;
+// }
+#index{
+    padding: 20px 0 0;
+    .con{
+        display: flex;
+        // align-items: center;
+        justify-content: center;
+        .item-box{
+            // margin: 0 auto;
+            // display: block;
+            width: 1000px;
+            .item{
+                padding: 20px;
+                display: block;
+                margin-top:20px ;
+                text-decoration: none;
+                color: #333;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);  
+                .title{
+                    text-align: left;
+                    font-size: large;
+                    font-weight: 700;
+                    line-height: 1.5;
+                    font-family: -apple-system,SF UI Display,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+                    overflow: hidden;
+                    text-overflow:ellipsis;
+                    white-space: nowrap;
+                    word-break:break-all;
+                }
+                .description{
+                    padding-top: 8px;
+                    text-align: left;
+                    font-size: small;
+                    color: #999;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    overflow: hidden;
+                    word-break:break-all;
+                }
+                .font-box{
+                    padding-top: 8px;
+                    display: flex;
+                    text-align: left;
+                    align-items: center;
+                    color: #999;
+                    .font-avatar{
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                    }
+                    .font-name{
+                        transform: translateX(4px);
+                    }
+                    .font-star{
+                        margin-left: auto;
+                        font-size: small;
+                    }
+                }
+            }
+            // :hover{
+            //     background-color: #eee;
+                
+            // }
+        }
+        
+        
+        @media (max-width:1250px){
+            .item-box{
+                width: 800px;
+            }
+        }
+        @media (max-width:900px){
+            .item-box{
+                width: 650px;
+            }
+        }
+        @media (max-width:700px){
+            .item-box{
+                width: 450px;
+            }
+        }
+        @media (max-width:500px){
+            .item-box{
+                width: 100%;
+            }
+        }
+        // .nav{
+        //     transform: translateX(20px);
+        //     width: 50px;
+        //     height: 20px;
+        //     background-color: green;
+        // }
+    }
+} 
+

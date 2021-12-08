@@ -1,0 +1,117 @@
+*{
+    .el-message-box{
+        width: auto;
+    }
+}
+#my{
+    padding: 50px 0 0;
+    .con{
+        display: flex;
+        justify-content: center;
+        .item-box{
+            width: 1000px;
+            .user-box{
+                display: flex;
+                align-items: center;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #eee;
+                .avatar{
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                    background-color: #ddd;
+                }
+                .user-detail{
+                    margin-left: 20px;
+                    .username{
+                        font-size: large;
+                        font-weight: 700;
+                    }            
+                }
+            }
+            .item{
+                padding: 20px;
+                margin-top:20px ;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);  
+                text-align: left;
+                .title{
+                    display: block;
+                    text-decoration: none;
+                    color: #333;
+                    font-size: large;
+                    font-weight: 700;
+                    line-height: 1.5;
+                    font-family: -apple-system,SF UI Display,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+                }
+                .description{
+                    padding-top: 8px;
+                    font-size: small;
+                    color: #999;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    overflow: hidden;
+                    word-break:break-all;
+                }
+                .edit-box{
+                    float: right;
+                    font-size: large;
+                    cursor: pointer;
+                    position: relative;
+                    i{
+                        width: 20px;
+                        height: 20px;
+                    }
+                    .panel{
+                        position: absolute;
+                        top: 20px;
+                        left: 0;
+                        margin: 0;
+                        padding: 0;
+                        width: 50px;
+                        background-color: #fff;
+                        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+                        border-radius: 4px;
+                        text-align: center;
+                        transform: translateY(-5px);
+                        transition: all 200ms;
+                        height: 0;
+                        overflow: hidden;
+                        a{
+                            text-decoration: none;
+                            color: #333;
+                            font-size: 13px;
+                            display: block;
+                            padding: 5px 10px;
+                            &:hover{
+                                background-color: #EA6F5A;
+                                color: #fff;
+                            }
+                        }
+                    }
+                    &.show{
+                        .panel{
+                            height: auto;
+                            transform: translateY(0px);
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width:1250px){
+            .item-box{
+                width: 800px;
+            }
+        }
+        @media (max-width:900px){
+            .item-box{
+                width: 650px;
+            }
+        }
+        @media (max-width:700px){
+            .item-box{
+                width: 450px;
+            }
+        }
+    }
+}
